@@ -138,7 +138,9 @@ li {
 }
 
 .button:hover {
-    border-radius: 30px;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(97, 76, 170, 0.4);
+    color: #fff;
 }
 
 /*===================
@@ -326,6 +328,7 @@ li {
     padding: 20px 20px 2px 20px;
     border-radius: 10px;
     text-align: center;
+    transition: all 0.3s ease;
 }
 
 .services .entry i {
@@ -340,7 +343,8 @@ li {
 
 .services .entry:hover {
     background-color: #FFFFFF;
-    box-shadow: 0px 1px 45px 0px #DDDDDD;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transform: translateY(-5px);
 }
 
 .services .first-row {
@@ -400,10 +404,12 @@ li {
     background-size: cover;
     padding: 80px 20px 60px 21px;
     border-radius: 10px;
+    transition: all 0.3s ease;
 }
 
 .counter .content:hover {
-    opacity: 0.7;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .counter .entry {
@@ -436,6 +442,7 @@ li {
     border-radius: 10px;
     padding: 30px;
     margin: 0 15px 0 15px;
+    transition: all 0.3s ease;
 }
 
 .pricing .entry h3 {
@@ -455,8 +462,9 @@ li {
 }
 
 .pricing .entry:hover {
-    box-shadow: 0px 1px 45px 0px #DDDDDD;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     background: #fff;
+    transform: translateY(-5px);
 }
 
 .pricing .entry-center {
@@ -469,6 +477,8 @@ li {
 
 .pricing .entry-center:hover {
     background: #E7E0F2;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .pricing .pricing-button {
@@ -497,6 +507,7 @@ li {
     padding: 20px 20px 2px 20px;
     border-radius: 10px;
     text-align: center;
+    transition: all 0.3s ease;
 }
 
 .why-us .entry i {
@@ -511,7 +522,8 @@ li {
 
 .why-us .entry:hover {
     background-color: #FFFFFF;
-    box-shadow: 0px 1px 45px 0px #DDDDDD;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transform: translateY(-5px);
 }
 
 .why-us .first-row {
@@ -530,15 +542,18 @@ li {
 }
 
 .our-work .col-work {
+    overflow: hidden;
+    border-radius: 10px;
     margin-bottom: 30px;
 }
 
 .our-work .col-work img {
-    transition: all .3s;
+    transition: all .4s ease;
+    border-radius: 10px;
 }
 
 .our-work .col-work img:hover {
-    padding: 17px;
+    transform: scale(1.05);
     opacity: 0.9;
 }
 
@@ -596,6 +611,7 @@ li {
     text-align: center;
     border: 1px solid #ddd;
     background: #fff;
+    transition: all 0.3s ease;
 }
 
 .testimonial-work .entry h5 {
@@ -617,7 +633,8 @@ li {
 
 .testimonial-work .entry:hover {
     background-color: #FFFFFF;
-    box-shadow: 0px 1px 45px 0px #DDDDDD;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transform: translateY(-5px);
 }
 
 .testimonial-work .first-row {
@@ -821,24 +838,12 @@ footer ul li a i {
     background: #ea4c89;
 }
 
-footer ul li a .fa-facebook {
-    background: #3b5998;
+footer ul li a .fa-instagram {
+    background: #e1306c;
 }
 
-footer ul li a .fa-twitter {
-    background: #1da1f2;
-}
-
-footer ul li a .fa-dribbble {
-    background: #ea4c89;
-}
-
-footer ul li a .fa-behance {
-    background: #1769ff;
-}
-
-footer ul li a .fa-whatsapp {
-    background: #25d366;
+footer ul li a .fa-youtube {
+    background: #ff0000;
 }
 
 /*===================

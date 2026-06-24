@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Simple HTML CSS JS website",
   "scripts": {
-    "dev": "npx serve --cors .",
+    "dev": "npx serve -s --cors .",
     "build": "mkdir -p dist && cp -r *.html css img js webfonts dist/ || true",
-    "start": "npx serve dist",
-    "preview": "npx serve dist"
+    "start": "npx serve -s dist",
+    "preview": "npx serve -s dist"
   },
   "dependencies": {},
   "devDependencies": {}
