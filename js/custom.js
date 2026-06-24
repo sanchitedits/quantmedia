@@ -3,8 +3,8 @@ $(function(){
 
 	AOS.init({
 	 	once: true,
-	 	duration: 800,
-		easing: 'ease-out-cubic',
+	 	duration: 1200,
+		easing: 'ease-out-quart',
 		offset: 50,
 	});
 

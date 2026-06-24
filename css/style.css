@@ -135,7 +135,7 @@ li {
     font-size: 15px;
     position: relative;
     padding: 8px 20px;
-    transition: all .3s;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
     margin-top: 20px;
 }
 
@@ -193,7 +193,7 @@ li {
     display: block;
     opacity: 0;
     visibility: hidden;
-    transition: .3s;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
     margin-top: 0;
     padding: 8px 20px 8px 20px;
     background: #fff;
@@ -218,7 +218,7 @@ li {
 }
 
 .navbar .nav-item:hover .dropdown-menu {
-    transition: .3s;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
     opacity: 1;
     visibility: visible;
     top: 100%;
@@ -335,7 +335,7 @@ li {
     padding: 20px 20px 2px 20px;
     border-radius: 10px;
     text-align: center;
-    transition: all 0.3s ease;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .services .entry i {
@@ -350,8 +350,8 @@ li {
 
 .services .entry:hover {
     background-color: #FFFFFF;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(97, 76, 170, 0.15);
+    transform: translateY(-8px) scale(1.02);
 }
 
 .services .first-row {
@@ -411,12 +411,12 @@ li {
     background-size: cover;
     padding: 80px 20px 60px 21px;
     border-radius: 10px;
-    transition: all 0.3s ease;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .counter .content:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(97, 76, 170, 0.15);
 }
 
 .counter .entry {
@@ -449,7 +449,7 @@ li {
     border-radius: 10px;
     padding: 30px;
     margin: 0 15px 0 15px;
-    transition: all 0.3s ease;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
     border: 1px solid #f0f0f0;
 }
 
@@ -470,9 +470,9 @@ li {
 }
 
 .pricing .entry:hover {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 20px 40px rgba(97, 76, 170, 0.15);
     background: #fff;
-    transform: translateY(-5px);
+    transform: translateY(-8px) scale(1.02);
     border-color: transparent;
 }
 
@@ -487,8 +487,8 @@ li {
 
 .pricing .entry-center:hover {
     background: #E7E0F2;
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(97, 76, 170, 0.15);
 }
 
 .pricing .pricing-button {
@@ -517,7 +517,7 @@ li {
     padding: 20px 20px 2px 20px;
     border-radius: 10px;
     text-align: center;
-    transition: all 0.3s ease;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .why-us .entry i {
@@ -532,8 +532,8 @@ li {
 
 .why-us .entry:hover {
     background-color: #FFFFFF;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(97, 76, 170, 0.15);
+    transform: translateY(-8px) scale(1.02);
 }
 
 .why-us .first-row {
@@ -558,7 +558,7 @@ li {
 }
 
 .our-work .col-work img {
-    transition: all .4s ease;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
     border-radius: 10px;
 }
 
@@ -621,7 +621,7 @@ li {
     text-align: center;
     border: 1px solid #ddd;
     background: #fff;
-    transition: all 0.3s ease;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .testimonial-work .entry h5 {
@@ -643,8 +643,8 @@ li {
 
 .testimonial-work .entry:hover {
     background-color: #FFFFFF;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(97, 76, 170, 0.15);
+    transform: translateY(-8px) scale(1.02);
 }
 
 .testimonial-work .first-row {
@@ -873,7 +873,7 @@ footer ul li a .fa-youtube {
         display: none;
         opacity: 0;
         visibility: hidden;
-        transition: .3s;
+        transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
         margin-top: 0;
         padding: 8px 20px 8px 20px;
         background: #fff;
@@ -1003,4 +1003,9 @@ footer ul li a .fa-youtube {
         margin-right: 0;
     }
 
+}
+.button:hover, .btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(97, 76, 170, 0.2);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
