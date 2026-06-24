@@ -8,7 +8,18 @@ export default defineConfig(() => {
       outDir: '../../dist',
       emptyOutDir: true,
       rollupOptions: {
-        // default input is the root index.html
+        input: {
+          main: 'rabonadev.com/veco-template/index.html',
+          about: 'rabonadev.com/veco-template/about-us.html',
+          contact: 'rabonadev.com/veco-template/contact-us.html',
+          faq: 'rabonadev.com/veco-template/faq.html',
+          features: 'rabonadev.com/veco-template/features.html',
+          ourWork: 'rabonadev.com/veco-template/our-work.html',
+          pricing: 'rabonadev.com/veco-template/pricing.html',
+          services: 'rabonadev.com/veco-template/services.html',
+          testimonial: 'rabonadev.com/veco-template/testimonial.html',
+          404: 'rabonadev.com/veco-template/404.html'
+        }
       },
     },
     server: {
