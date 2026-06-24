@@ -9,8 +9,10 @@
     "preview": "vite preview",
     "clean": "rm -rf dist server.js"
   },
-  "devDependencies": {
-    "playwright": "^1.61.1",
+  "dependencies": {
     "vite": "^6.2.3"
+  },
+  "devDependencies": {
+    "playwright": "^1.61.1"
   }
 }
