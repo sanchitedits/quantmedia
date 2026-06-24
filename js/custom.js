@@ -2,7 +2,7 @@ $(function(){
 	'use strict';
 
 	AOS.init({
-	 	once: true,
+	 	once: false,
 	 	duration: 1200,
 		easing: 'ease-out-quart',
 		offset: 50,
