@@ -4,7 +4,7 @@
   "description": "Simple HTML CSS JS website",
   "scripts": {
     "dev": "npx serve .",
-    "build": "mkdir -p dist && cp -r *.html css img js dist/ || true",
+    "build": "mkdir -p dist && cp -r *.html css img js webfonts dist/ || true",
     "preview": "npx serve dist"
   },
   "dependencies": {},
