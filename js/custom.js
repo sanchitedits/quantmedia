@@ -17,19 +17,21 @@ $(function(){
 			var $target = $(targetId);
 			if ($target.length) {
 				e.preventDefault();
-				$('html, body').animate({
-					scrollTop: $target.offset().top - 50
-				}, 800, 'swing', function() {
+				if (window.location.pathname !== href) {
 					history.pushState(null, null, href);
-				});
+				}
+				$('html, body').stop().animate({
+					scrollTop: $target.offset().top - 50
+				}, 800, 'swing');
 				// Update active nav state
 				$('.navbar-nav .nav-item').removeClass('active');
 				$(this).closest('.nav-item').addClass('active');
 			} else if (href === '/') {
 				e.preventDefault();
-				$('html, body').animate({ scrollTop: 0 }, 800, 'swing', function() {
+				if (window.location.pathname !== href) {
 					history.pushState(null, null, href);
-				});
+				}
+				$('html, body').stop().animate({ scrollTop: 0 }, 800, 'swing');
 			}
 		}
 	});
