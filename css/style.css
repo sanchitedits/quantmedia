@@ -44,7 +44,7 @@ Author URL : https://themeforest.net/user/rabonadev
     box-sizing: border-box;
 }
 
-body {
+body, html {
     margin: 0;
     padding: 0;
     background: #fff;
@@ -52,6 +52,7 @@ body {
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
     line-height: 22px;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -148,6 +149,11 @@ li {
 ===================*/
 .navbar {
     padding: 10px 0 10px 0;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active {
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 .navbar .navbar-brand h2 {
@@ -849,7 +855,7 @@ footer ul li a .fa-youtube {
 /*===================
     responsive
 ===================*/
-@media (max-width:767px) {
+@media (max-width:991px) {
     .navbar-brand {
         margin-left: 15px;
     }
@@ -896,7 +902,7 @@ footer ul li a .fa-youtube {
         margin-bottom: 30px;
     }
 
-    .counter .col-md-4:last-child .entry {
+    .counter [class*="col-"]:last-child .entry {
         margin-bottom: 0;
     }
 
@@ -907,7 +913,7 @@ footer ul li a .fa-youtube {
         margin-right: 0;
     }
 
-    .pricing .col-md-4:last-child .entry {
+    .pricing [class*="col-"]:last-child .entry {
         margin-bottom: 0;
     }
 
