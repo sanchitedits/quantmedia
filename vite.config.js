@@ -1,17 +1,11 @@
-import path from 'path';
 import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
     root: 'rabonadev.com/veco-template',
     plugins: [],
-    resolve: {
-      alias: {
-        '@': path.resolve(__dirname, '.'),
-      },
-    },
     build: {
-      outDir: path.resolve(__dirname, 'dist'),
+      outDir: '../../dist',
       emptyOutDir: true,
       rollupOptions: {
         // default input is the root index.html
