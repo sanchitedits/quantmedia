@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Simple HTML CSS JS website",
   "scripts": {
-    "dev": "npx serve .",
+    "dev": "npx serve --cors .",
     "build": "mkdir -p dist && cp -r *.html css img js webfonts dist/ || true",
+    "start": "npx serve dist",
     "preview": "npx serve dist"
   },
   "dependencies": {},
