@@ -10,7 +10,6 @@
     "clean": "rm -rf dist server.js"
   },
   "devDependencies": {
-    "playwright": "^1.61.1",
     "vite": "^6.2.3"
   }
 }
