@@ -1,13 +1,21 @@
 {
-  "name": "veco-template",
-  "version": "1.0.0",
-  "description": "Simple HTML CSS JS website",
+  "name": "quant-media-react",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "npx serve -s --cors .",
-    "build": "mkdir -p dist && cp -r *.html css img js webfonts dist/ || true",
-    "start": "npx serve -s dist",
-    "preview": "npx serve -s dist"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "vite": "^5.0.0"
+  }
 }
