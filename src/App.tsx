@@ -183,7 +183,7 @@ export default function App() {
               </div>
             </div>
             <div className="col-lg-6 col-md-12 mb-4">
-              <div className="entry" data-aos="fade-up">
+              <div className="entry">
                 <img
                   src="/img/our-work2.png"
                   alt=""
@@ -360,7 +360,7 @@ export default function App() {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12 mb-4">
-              <div className="entry" data-aos="fade-up">
+              <div className="entry">
                 <img src="/img/about-us.png" alt="" />
               </div>
             </div>
@@ -789,7 +789,7 @@ export default function App() {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12 mb-4">
-              <div className="entry" data-aos="fade-up">
+              <div className="entry">
                 <img src="/img/about-us.png" alt="" />
               </div>
             </div>
