@@ -1,13 +1,6 @@
 $(function(){
 	'use strict';
 
-	AOS.init({
-	 	once: false,
-	 	duration: 1200,
-		easing: 'ease-out-quart',
-		offset: 50,
-	});
-
 	// Handle SPA routing for links
 	$('a').on('click', function(e) {
 		var href = $(this).attr('href');
