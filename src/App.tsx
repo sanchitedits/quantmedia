@@ -5,7 +5,16 @@ export default function App() {
     // @ts-ignore
     if (window.AOS) {
       // @ts-ignore
-      window.AOS.init();
+      window.AOS.init({
+        once: false,
+        duration: 1200,
+        easing: "ease-out-quart",
+        offset: 50,
+      });
+      setTimeout(() => {
+        // @ts-ignore
+        window.AOS.refresh();
+      }, 500);
     }
   }, []);
 
